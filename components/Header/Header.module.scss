@@ -1,0 +1,52 @@
+.root {
+  font-size: var(--base);
+  color: var(--white-color);
+  background-color: var(--dark-color);
+  padding: 16px 0;
+
+  // container
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    position: relative;
+    bottom: 2px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    a {
+      position: relative;
+      top: 2px;
+      font-size: var(--xl_2);
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 2px;
+    width: 522px;
+  }
+
+  button {
+    font-size: var(--sm);
+  }
+
+  @media screen and (max-width: 1040px) {
+    .navbar,
+    button {
+      display: none;
+    }
+
+    // container
+    > div {
+      justify-content: center;
+    }
+  }
+}

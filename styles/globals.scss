@@ -1,0 +1,42 @@
+:root {
+  --white-color: #ffffff;
+  --dark-color: #28293E;
+
+  // main dimentions (and fonts)
+  --xs_3: 0.25rem; //4px
+  --xs_2: 0.5rem; //8px;
+  --xs_1: 0.625rem; //10px
+  --xs: 0.75rem; //12px
+  --sm: 0.875rem; //14px
+  --base: 1rem; //16px
+  --lg: 1.125rem; //18px
+  --xl: 1.25rem; //20px
+  --xl_2: 1.5rem; //24px
+  --xl_3: 1.625rem; //26px
+  --xl_4: 1.75rem; //28px
+  --base_2: 2rem; //32px
+  --xl_4: 2.25rem; //36px
+  --xl_6: 2.5rem; //40px
+  --xl_8: 2.75rem; //44px
+  --xl_10: 3.75rem; //60px
+
+  --media_lg: 1040px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
