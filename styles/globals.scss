@@ -1,6 +1,11 @@
 :root {
   --white-color: #ffffff;
   --dark-color: #28293E;
+  --gray-color: rgba(255, 255, 255, .64);
+  --brown-color: #391400;
+  --beige-color: #FDF0E9;
+  --green-color: #16CD53;
+  --lime-color: #4FE24A;
 
   // main dimentions (and fonts)
   --xs_3: 0.25rem; //4px
@@ -19,8 +24,12 @@
   --xl_6: 2.5rem; //40px
   --xl_8: 2.75rem; //44px
   --xl_10: 3.75rem; //60px
+  --xl_12: 4.5rem; //72px
 
   --media_lg: 1040px;
+
+  --regular-text: 400;
+  --bold-text: 500;
 }
 
 html,
@@ -30,6 +39,7 @@ body {
   font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 16px;
+  color: var(--white-color);
 }
 
 a {

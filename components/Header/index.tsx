@@ -11,7 +11,7 @@ const Header: React.FC = () => {
       <Container>
         <NextLink href="#" passHref>
           <div className={s.logo}>
-            <Image src="/logo.svg" alt="Logo" width={46} height={44} />
+            <Image src="/logo.svg" alt="Logo" width={46} height={44} priority />
             <a>Agency</a>
           </div>
         </NextLink>

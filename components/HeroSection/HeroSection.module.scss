@@ -1,0 +1,26 @@
+.root {
+  padding: 72px 0 58px 0;
+  text-align: center;
+  background-color: var(--dark-color);
+
+  h1 {
+    font-size: var(--xl_12);
+    font-weight: var(--regular-text);
+    margin: 0 0 34px 0;
+  }
+
+  .subtitle {
+    color: var(--gray-color);
+    line-height: var(--base_2);
+  }
+
+  @media screen and (max-width: 1040px) {
+    padding: 69px 0 79px 0;
+
+    .subtitle {
+      br {
+        display: none;
+      }
+    }
+  }
+}

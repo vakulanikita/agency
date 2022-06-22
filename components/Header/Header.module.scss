@@ -1,11 +1,10 @@
 .root {
   font-size: var(--base);
-  color: var(--white-color);
   background-color: var(--dark-color);
   padding: 16px 0;
 
   // container
-  > div {
+  >div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,13 +38,15 @@
   }
 
   @media screen and (max-width: 1040px) {
+    padding: 10px 0;
+
     .navbar,
     button {
       display: none;
     }
 
     // container
-    > div {
+    >div {
       justify-content: center;
     }
   }
