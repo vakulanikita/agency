@@ -25,7 +25,12 @@
 
   @media screen and (max-width: 1040px) {
     main {
+      padding: 32px 0 224px 0;
 
+      .categoryFilter {
+        margin-bottom: 48px;
+      }
     }
+
   }
 }

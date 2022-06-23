@@ -3,7 +3,6 @@
   justify-content: center;
   
   color: var(--brown-transp-color);
-  margin-bottom: 75px;
 
   .list {
     display: flex;
@@ -19,7 +18,7 @@
     }
   }
 
-  select {
+  .select {
     display: none;
     width: 100%;
   }
@@ -29,7 +28,7 @@
       display: none;
     }
 
-    select {
+    .select {
       display: block;
     }
   }

@@ -16,8 +16,27 @@ interface SelectProps {
 const Select: React.FC<SelectProps> = ({ options, onChange }) => {
   const dispatch = useAppDispatch()
   const { activeCategory } = useAppSelector(state => state.cardSlice)
-  const selectRef = React.useRef(null)
+  const selectBtnRef = React.useRef<HTMLDivElement>(null)
+  const selectRef = React.useRef<HTMLDivElement>(null)
   const [selectIsOpen, setSelectIsOpen] = React.useState(false)
+
+  const handleClickOutside = (event: any) => {
+    /* @ts-ignore */
+    if (
+      selectRef.current &&
+      !selectRef.current.contains(event.target) &&
+      !selectBtnRef.current?.contains(event.target)
+    ) {
+      setSelectIsOpen(false);
+    }
+  };
+
+  React.useEffect(() => {
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  }, []);
 
   const optionsElements = options.map((elem) => {
     return (
@@ -40,7 +59,7 @@ const Select: React.FC<SelectProps> = ({ options, onChange }) => {
   return (
     <div className={s.root}>
       <div
-        ref={selectRef}
+        ref={selectBtnRef}
         onClick={() => {
           setSelectIsOpen(!selectIsOpen);
         }}

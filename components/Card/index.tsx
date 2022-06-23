@@ -34,6 +34,7 @@ const Card: React.FC<CardProps> = ({
         >
           <Badge>{item.category}</Badge>
         </div>
+        <br/>
         <div className={s.title}>{item.title}</div>
       </div>
     </div>

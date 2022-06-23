@@ -36,7 +36,9 @@ const CategoryFilter: React.FC = () => {
           })}
         </div>
 
-        <Select options={categories} onChange={changeCategory} />
+        <div className={s.select}>
+          <Select options={categories} onChange={changeCategory} />
+        </div>
 
       </Container>
     </div>
