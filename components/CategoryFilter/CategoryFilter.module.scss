@@ -1,0 +1,37 @@
+.root {
+  display: flex;
+  justify-content: center;
+  
+  color: var(--brown-transp-color);
+  margin-bottom: 75px;
+
+  .list {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+
+    .item {
+      cursor: pointer;
+  
+      &.active {
+        color: var(--green-color);
+      }
+    }
+  }
+
+  select {
+    display: none;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1040px) {
+    .list {
+      display: none;
+    }
+
+    select {
+      display: block;
+    }
+  }
+
+}

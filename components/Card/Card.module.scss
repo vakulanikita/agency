@@ -1,0 +1,57 @@
+.root {
+  position: relative;
+  // height: 416px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  // box-sizing: content-box;
+  height: 416px;
+
+  &.active {
+    // border: 6px solid var(--lime-color);
+  }
+
+  .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 6px solid transparent;
+    z-index: 100;
+
+    &.active {
+      border-color: var(--lime-color);
+    }
+  }
+
+  span {
+    // in order to hide the protruding image
+    // behind the edges of the mask
+    border-radius: 7px;
+  }
+
+  .content {
+    position: absolute;
+    right: 10px;
+    bottom: 53px;
+    left: 48px;
+    z-index: 101;
+
+    .badge {
+      margin-bottom: 20px;
+    }
+
+    .title {
+      display: inline-block;
+      font-size: var(--xl_6);
+      cursor: text;
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    .content {
+      left: 28px
+    }
+  }
+}

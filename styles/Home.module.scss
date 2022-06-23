@@ -1,2 +1,31 @@
 .root {
+  background-color: var(--beige-color);
+  min-height: 100vh;
+
+  main {
+    padding: 80px 0 184px 0;
+
+    .categoryFilter {
+      margin-bottom: 75px;
+    }
+
+    .cardGrid {
+      margin-bottom: 80px;
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+
+      button {
+        color: var(--brown-color);
+      }
+    }
+  }
+
+  @media screen and (max-width: 1040px) {
+    main {
+
+    }
+  }
 }

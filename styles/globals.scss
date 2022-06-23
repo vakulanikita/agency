@@ -3,9 +3,12 @@
   --dark-color: #28293E;
   --gray-color: rgba(255, 255, 255, .64);
   --brown-color: #391400;
+  --brown-transp-color: rgba(57, 20, 0, .64);
   --beige-color: #FDF0E9;
   --green-color: #16CD53;
   --lime-color: #4FE24A;
+  --orange-color: #EF6D58;
+  --peach-color: #F3D1BF;
 
   // main dimentions (and fonts)
   --xs_3: 0.25rem; //4px
@@ -30,6 +33,8 @@
 
   --regular-text: 400;
   --bold-text: 500;
+
+  --shadow: 0px 3px 9px 0px rgba(57, 20, 0, 0.08);
 }
 
 html,

@@ -1,0 +1,59 @@
+.root {
+  position: relative;
+  z-index: 1000;
+
+  .select {
+    padding: 0 16px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+    border: 1px solid var(--peach-color);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  span {
+    position: relative;
+    top: 2px;
+  }
+
+  svg {
+    position: relative;
+    top: 1px;
+    width: 10px;
+    height: 6px;
+    fill: var(--orange-color);
+    margin-left: 9px;
+  }
+
+  .optionsWrapper {
+    position: absolute;
+    top: calc(100% + 5px);
+    padding: 10px 0;
+    display: none;
+    width: 100%;
+    background: var(--white-color);
+    border: 1px solid var(--peach-color);
+    box-sizing: border-box;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+  
+    &.active {
+      display: block;
+    }
+  
+    .option {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 16px 10px 16px;
+      position: relative;
+      cursor: pointer;
+
+      &.active {
+        background-color: var(--peach-color);
+      }
+    }
+  }
+}
